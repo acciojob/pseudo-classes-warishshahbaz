@@ -1,33 +1,50 @@
-/*  your css code here. If applicable */
-.container{
-	height:100vh;
-	padding:12px;
-	background-color:rgb(135, 206, 235);
+:root {
+  background-color: rgb(135, 206, 235);
 }
- p:first-child{
-	color:white;
-	background-color:black;
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
- p:nth-child(2){
-	color:inherit;
+
+article {
+  margin-bottom: 20px;
 }
-p:nth-child(3) {
+
+p:first-child {
+  color: white;
+  background-color: black;
+}
+
+p:nth-child(2) {
+  color: inherit;
+}
+
+p:last-child {
   color: red;
 }
-li{
-	background-color:gray;
-	width:50%;
-	padding:10px;
+
+.list {
+  list-style: none;
+  padding: 0;
 }
-li:nth-child(odd){
-	background-color:white;
+
+.list li {
+  background-color: gray;
+  width: 50%;
+  padding: 10px;
 }
-li:first-child{
-	font-size:22px;
+
+.list li:nth-child(odd) {
+  background-color: white;
 }
-li:last-child{
-	font-size:22px;
+
+.list li:first-child,
+.list li:last-child {
+  font-size: 22px;
 }
-li:nth-last-child(3){
-	background-color:pink;
+
+.list li:nth-last-child(3) {
+  background-color: pink;
 }
